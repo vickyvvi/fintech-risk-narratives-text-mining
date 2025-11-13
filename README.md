@@ -48,5 +48,3 @@ The project has three main components:
 
 - Python 3.9+
 - Main libraries: `pandas`, `numpy`, `tqdm`, `tomotopy`, `gensim`, `sentence-transformers`, `transformers`, `umap-learn`, `hdbscan`, `matplotlib`, `seaborn`, `scikit-learn`
-
-A full `requirements.txt` can be added later if needed.
