@@ -1,0 +1,416 @@
+in particular
+for example
+for instance
+business_financial_condition_result
+condition_result_operation
+such as
+as well
+as well as
+in addition
+as a result
+to the extent
+from time
+product_service
+financial_service
+result_significant
+by way
+damage_reputation
+for purposes
+with respect
+business_partner
+negative_impact
+with respect to
+in respect
+as described
+business_activity
+market_condition
+change_control
+ordinary_share
+economic_condition
+united_state
+public_company
+business_model 
+share_common_stock
+class_common_stock
+date_annual_report
+increase_cost
+market_condition
+economic_condition
+among others
+provide_service
+among other
+business_activity
+including but
+business_operation
+risk_management
+financial_statement
+increase_risk
+internal_control_financial_reporting
+including among
+materially_adversely_affect
+including without
+financial_result
+subject to
+result in
+could result
+may result
+could have
+adversely affect
+would have
+material adverse effect
+material adverse
+adverse effect
+significant adverse
+may adversely
+may materially
+could adversely
+could materially
+would materially
+would adversely
+can adversely
+is likely
+are likely
+high degree
+highly dependent
+highly uncertain
+the company
+our ability
+we may
+long_term
+we expect
+we believe
+we will
+there can
+not assure
+cannot assure
+no assurance
+not effective
+not sufficient
+not successful
+not prevent
+not guarantee
+no guarantee
+not adequate
+not adequately
+not necessarily
+not possible
+not practicable
+not feasible
+not comply
+not comply with
+not meet
+not achieve
+not remediate
+may not be sufficient
+may not prevent
+may not be effective
+may not achieve
+may not comply
+unable to
+unable to prevent
+unable to achieve
+fail to
+fail to comply
+fail to prevent
+there is no guarantee
+there is no assurance
+there is no certainty
+cannot prevent
+cannot comply
+cannot achieve
+could not assure
+could not prevent
+there can be no assurance
+there can be no guarantee
+cannot be assured
+may never
+may fail to
+failure to
+in the event that
+in the event of
+as well as any
+at any time
+from time to time
+it is possible that
+there is a risk that
+whether or not
+one or more
+any of the foregoing
+any such
+none of the above
+num num
+december num
+num december
+num num december
+december num num
+approximately num
+num approximately
+approximately num num
+num num approximately
+num capital
+capital num
+num num capital
+capital num capital
+num dividend
+dividend num
+num asset
+asset num
+num january
+january num
+num num january
+january num num
+num june
+june num
+num num june
+num october
+october num
+num num october
+num loss
+loss num
+num num loss
+num deficit
+deficit num
+num num deficit
+num stagger
+stagger num
+num jurisdiction
+kong num
+num hong
+amend restate
+restate amend
+amend restate amend
+restate amend restate
+amend restate num
+restate num num
+capital amend
+amendment amend
+limit amendment
+litigation delaware
+consent litigation delaware
+law regulation
+law tax
+tax law
+law contractual
+contractual invention
+fail comply
+fail comply regulation
+law regulation comply
+comply regulation
+comply regulation criminal
+comply obligation regulatory
+regulation criminal
+criminal lawsuit
+unauthorized improper
+not limit
+delay not limit
+no limit amendment
+not consent
+unissue not consent
+not consent no
+without capital
+undesignated without capital
+amend undesignated without
+preclude without
+without unissue
+risk great
+great risk
+risk great risk
+critical success
+success law
+significant adverse
+negative negative
+revenue revenue
+revenue revenue revenue
+revenue fluctuate revenue
+luctuate revenue prevent
+asset asset
+capital cash cash
+revenue believe revenue
+believe revenue revenue
+asset believe num
+believe num asset
+num
+December
+October
+January
+February
+num require
+March
+April
+not possible
+it uncertain
+include num
+use open
+materially harm
+adverse consequence
+year end december
+result harm
+continue concern
+effect business result
+May
+february num num
+shall not
+report form num
+january num num
+num company
+affect business result
+adverse effect business
+adversely affect business
+num num num
+it difficult predict
+april num num
+num num december
+not able obtain
+november num num
+not able to
+not able
+march num num
+it difficult obtain
+no assurance able
+June
+currently not
+not continue
+July
+not cover
+addition not
+use num
+similar event
+asset not
+law not
+able maintain
+August
+September
+direct indirect
+November
+safe circular
+institutional funding
+concern pursue
+consolidated variable
+memorandum article
+no assurance
+time time
+not assure
+adversely impact
+factor include not
+num year
+condition result
+num party software
+result operation
+not maintain
+operating result
+in order to
+financial condition
+general business
+there can be no assurance
+no assurance
+due to
+as well as
+in connection with
+from time to time
+at the same time
+in the event
+on the other hand
+there can_be no assurance
+cannot assure
+cannot guarantee
+may adversely affect
+our business
+our operations 
+our ability
+our results
+our financial condition 
+the company
+financial condition result operation
+material adverse effect business
+time time
+require
+required
+requires
+requiring
+result operation financial condition
+limit ability
+include limit
+business result operation
+negatively impact
+conduct business
+harm business
+materially adversely affect business
+adversely impact
+rule regulation
+adverse effect
+impact business
+timely manner
+adversely affect business financial
+adverse impact
+expect continue
+require significant
+failure comply
+recent year
+result loss
+risk relate
+limit_ability
+depend_ability
+affect_ability
+ability_attract
+impair_ability
+adversely_affect_ability
+restrict_ability
+potential_liability
+impact_ability
+ability_provide
+ability_maintain
+ability_obtain
+ability_grow
+ability_retain
+ability_continue
+limitation_ability
+result_inability
+achieve_profitability
+ability_attract_retain
+success_depend_ability
+reduce_profitability
+political_instability
+impede_ability
+restriction_ability
+negatively_impact_ability
+ability_access
+dependent_ability
+ability_manage
+delay_ability
+inability_obtain
+limited_liability
+inhibit_ability
+harm_ability
+ability_willingness
+ability_meet
+lose_ability
+adversely_impact_ability
+hinder_ability_offer
+effect_ability
+guarantee_liability
+achieve_maintain_profitability
+adversely_affect_profitability
+adverse_effect_ability
+maintain_profitability
+performance_reliability
+limitation_liability
+reduce_availability
+interruption_availability
+adversely_affect_ability_attract
+limit_liability
+credit_availability
+negatively_affect_ability
+incur_liability
+timely_manner
+adversely_affect_business_financial
+year_end_december
+adverse_impact
+negatively_affect
+expect_continue
+result_financial_condition
+failure_comply
+risk_associate
+recent_year
+hold_company
+fail_comply
+able_obtain
