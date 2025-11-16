@@ -1,12 +1,8 @@
-# ============================
 # 0) 安装依赖（CUDA 12.4 适配 RTX 5090/50 系列）
-# ============================
 !pip -q install -U torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 !pip -q install -U transformers sentence-transformers tqdm pandas pyarrow numpy
 
-# ============================
 # 1) 导入
-# ============================
 import os
 import gc
 import math
@@ -19,9 +15,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from sentence_transformers import SentenceTransformer
 from contextlib import nullcontext
 
-# ============================
 # 2) 配置
-# ============================
 INPUT_CSV = "/content/sentences_dedup_loose_keep_risky.csv"  # 改成你的路径
 
 TEXT_COL = "sentence_raw"   # 语料列名
@@ -44,19 +38,15 @@ EXPORT_FLAT_EMB = False
 # 输出前缀
 OUT_PREFIX = os.path.splitext(INPUT_CSV)[0] + "_with_sentiment"
 
-# ============================
 # 3) 基础设置（5090 上更快）
-# ============================
 if torch.cuda.is_available():
     torch.set_float32_matmul_precision("high")     # 加速 matmul/attention
-    AMP_DTYPE = torch.bfloat16                     # 50 系列对 bf16 友好
+    AMP_DTYPE = torch.bfloat16                     
     AMP_CTX = torch.autocast(device_type="cuda", dtype=AMP_DTYPE)
 else:
     AMP_CTX = nullcontext()
 
-# ============================
 # 4) 读取数据
-# ============================
 df = pd.read_csv(INPUT_CSV)
 if TEXT_COL not in df.columns:
     raise ValueError(f"找不到文本列 {TEXT_COL}")
@@ -64,9 +54,8 @@ if TEXT_COL not in df.columns:
 print("输入规模:", df.shape)
 texts = df[TEXT_COL].fillna("").astype(str).tolist()
 
-# ============================
 # 5) 加载模型
-# ============================
+
 # 5.1 FinBERT 情绪
 finbert_tokenizer = AutoTokenizer.from_pretrained(FINBERT_MODEL_NAME)
 finbert_model = AutoModelForSequenceClassification.from_pretrained(FINBERT_MODEL_NAME)
@@ -87,9 +76,7 @@ emb_model = SentenceTransformer(EMB_MODEL_NAME, device=DEVICE)
 emb_dim = emb_model.get_sentence_embedding_dimension()
 print(f"Embedding model: {EMB_MODEL_NAME}, dim={emb_dim}")
 
-# ============================
 # 6) FinBERT 情绪推理（带 OOM 自适应）
-# ============================
 def finbert_predict(batch_texts):
     enc = finbert_tokenizer(
         batch_texts,
@@ -152,9 +139,7 @@ df["sentiment_score_positive"] = finbert_probs_reordered[:, 0]
 df["sentiment_score_neutral"]  = finbert_probs_reordered[:, 1]
 df["sentiment_score_negative"] = finbert_probs_reordered[:, 2]
 
-# ============================
 # 7) 句向量（带 OOM 自适应）
-# ============================
 def encode_embeddings(text_list, init_bs=INIT_BATCH_SIZE):
     # SentenceTransformer 内部也会分批；为更稳，这里再控制一层 batch（遇 OOM 降批）
     bs = init_bs
@@ -193,9 +178,7 @@ def encode_embeddings(text_list, init_bs=INIT_BATCH_SIZE):
 
 embeddings = encode_embeddings(texts, init_bs=INIT_BATCH_SIZE)
 
-# ============================
 # 8) 写出（Parquet 含 list；CSV 预览）
-# ============================
 df["embedding"] = [emb.tolist() for emb in embeddings]
 
 if EXPORT_FLAT_EMB:
@@ -221,10 +204,9 @@ print(OUT_PREFIX + ".csv      （仅情绪与原列，不含embedding列，便�
 if EXPORT_FLAT_EMB:
     print(OUT_PREFIX + "_flat.csv （情绪 + 向量展平 emb_0..，体积较大，便于直接聚类）")
 
-# ============================
 # 9) 清理
-# ============================
 del embeddings
 gc.collect()
 if torch.cuda.is_available():
+
     torch.cuda.empty_cache()
